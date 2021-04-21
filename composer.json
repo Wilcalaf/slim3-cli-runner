@@ -1,0 +1,31 @@
+{
+    "name": "wilcalaf/slim3-cli-runner",
+    "type" : "library",
+    "license": "MIT",
+    "description": "Run command line tasks for Slim PHP",        
+    "keywords": ["slim", "cli"],
+    "authors": [
+        {
+            "name": "Adrian Falleiro",
+            "email": "adrian@falleiro.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.0",
+        "psr/container": "^1.0"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^2.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Wilcalaf\\Slim3CliRunner\\": "src/"
+        }
+    },
+    "scripts": {
+        "test": [
+            "@phpcs"
+        ],
+        "phpcs": "php vendor/bin/phpcs"
+    }
+}
